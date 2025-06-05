@@ -1,11 +1,12 @@
 import pandas as pd
 import colorama as cd
+import random as rd
 
-pf = pd.read_csv("2025_insights.csv")
-print(pf)
+def load_data():
+    return pd.read_csv("2025_insights.csv")
 
 
-def simulate_match(team_numbers):
+def simulate_match(team_numbers, pf):
     #this will come in as a list
     red_alliance = [int(team_numbers["red1"]), int(team_numbers["red2"]), int(team_numbers["red3"])]
     blue_alliance = [int(team_numbers["blue1"]), int(team_numbers["blue2"]), int(team_numbers["blue3"])]
@@ -77,16 +78,3 @@ def simulate_match(team_numbers):
     print(f"Blue Alliance Teleop Points: {round(blue_stats['teleop_points'], 1)}")
     print(f"Red Alliance Endgame Points: {round(red_stats['endgame_points'], 1)}")
     print(f"Blue Alliance Endgame Points: {round(blue_stats['endgame_points'], 1)}")
-
-
-
-
-team_numbers =  {"red1": 1, "red2": 4, "red3": 16,
-                  "blue1": 33, "blue2": 78, "blue3": 148}
-team_numbers["red1"] = input("Enter Red Alliance Team 1 Number: ")
-team_numbers["red2"] = input("Enter Red Alliance Team 2 Number: ")
-team_numbers["red3"] = input("Enter Red Alliance Team 3 Number: ")
-team_numbers["blue1"] = input("Enter Blue Alliance Team 1 Number: ")
-team_numbers["blue2"] = input("Enter Blue Alliance Team 2 Number: ")
-team_numbers["blue3"] = input("Enter Blue Alliance Team 3 Number: ")
-simulate_match(team_numbers)
