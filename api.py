@@ -11,7 +11,7 @@ def get_team_data(team_number):
         return None
     return response.json()
 
-TBA_AUTH_KEY = "nnBAtvLTHPGM0xmeLWP6KWSyM4Sl9cbDXjDoVSM78BjFd0SGza5ad9zxqW21p77h	"
+TBA_AUTH_KEY = ""
 tba_url = "https://www.thebluealliance.com/api/v3"
 
 HEADERS = {
