@@ -44,11 +44,11 @@ Actively pulls data from Statbotics and TheBlueAlliance. Thanks to them for prov
 
 ## Documentation
 ### Final v1.1 6/6/2025
-I'm planning to wrap up this project for now. Unfortunately, the raw data issue will need to be solved a different time. It's time to start another project. Core functionality all works and I'm really happy about it.
+I'm planning to wrap up this project for now. Unfortunately, the raw data issue will need to be solved a different time. It's time to start another project. Core functionality all works and I'm really happy about it. Compare Teams functionality fixed after breaking.
 
 
 ### v1.0.1 6/5/2025
-Added main functionality of Get and Analyzing history of a team. Raw data for event data by year is not parsed at all so its all raw data from a singular event for now. Added the compare_teams function but is blank as I figure out how to best do it. There is NOW a main menu for using the tool. Maybe I'll make an interface too.
+Fixed main functionality of Get and Analyzing history of a team. Raw data for event data by year is not parsed at all so its all raw data from a singular event for now. Added the compare_teams function but is blank as I figure out how to best do it. There is NOW a main menu for using the tool. Maybe I'll make an interface too.
 
 
 ### v1.0.0 6/3/2025
