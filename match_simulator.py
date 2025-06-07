@@ -3,7 +3,9 @@ import colorama as cd
 import random as rd
 
 def load_data():
-    return pd.read_csv("2025_insights.csv")
+    df = pd.read_csv("2025_insights.csv")
+    df["num"] = df["num"].astype(int)  # Ensure numeric match
+    return df
 
 
 def simulate_match(team_numbers, pf):

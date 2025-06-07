@@ -1,5 +1,8 @@
 venv/
 api_key.txt
+Book1.csv
+reader.py
+2025_insightsmini.csv
 *.env
 __pycache__/
 *.pyc

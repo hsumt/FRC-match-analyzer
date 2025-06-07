@@ -1,5 +1,11 @@
 import statbotics
 import requests
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
 
 statbotics_url = "https://api.statbotics.io/v3/team/"
 def get_team_data(team_number):
@@ -7,11 +13,11 @@ def get_team_data(team_number):
     response = requests.get(url)
     if response.status_code != 200:
         print(f"Response Status Code: {response.status_code}")
-        print("The system ran into a chikin error again.")
+        print("The system ran into an error.")
         return None
     return response.json()
 
-TBA_AUTH_KEY = ""
+TBA_AUTH_KEY = os.getenv("TBA_AUTH_KEY")
 tba_url = "https://www.thebluealliance.com/api/v3"
 
 HEADERS = {
