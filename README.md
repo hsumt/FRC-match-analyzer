@@ -16,20 +16,22 @@ It is likely this project will not be touched for the current being. The future 
 
 ## File Structure
 match-analyzer/
-│
+```
 ├── data/
-│ ├── 2025_insights.csv # Full team performance dataset
-│ └── 2025_insightsmini.csv # Minimal version for quick testing if you need less data.
-│
+│   ├── 2025_insights.csv         # Full team performance dataset
+│   └── 2025_insightsmini.csv     # Minimal version for quick testing if you need less data.
+
 ├── src/
-│ ├── analyzer.py # Core analysis functions
-│ ├── api.py # Handles Statbotics API calls
-│ ├── match_simulator.py # Match scoring logic and simulation
-│ └── main.py # CLI entry point
-│
+│   ├── analyzer.py               # Core analysis functions
+│   ├── api.py                    # Handles Statbotics API calls
+│   ├── match_simulator.py        # Match scoring logic and simulation
+│   └── main.py                   # CLI entry point
+
 ├── .gitignore
 ├── requirements.txt
 ├── README.md
+```
+
 
 ## How to Get Started with usage
 1. Clone the Repo
