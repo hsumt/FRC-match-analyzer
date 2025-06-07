@@ -52,8 +52,11 @@ def main():
 
             print(f"\nMatches for {team_number} at {event_key}:")
             for match in matches:
-                print(f"{match['comp_level']} {match['match_number']} {match['score_breakdown']}")
-
+                print(f"---------------------------------------------")
+                print(f"{match['comp_level']} {match['match_number']}")
+                print(f"{match['score_breakdown']}")
+                print(f"---------------------------------------------")
+                print(f"---------------------------------------------")
             analyze_team(team_number, history_data)
         elif choice == "2":
             pf = load_data()  # Make sure pf is loaded here!
