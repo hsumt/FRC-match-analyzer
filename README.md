@@ -15,7 +15,6 @@ Match Analyzer is a Python-based CLI tool for analyzing and simulating FRC (Firs
 It is likely this project will not be touched for the current being. The future depends on whether an AI assistant would be recommendable or a smart picklisting function could be integrated within a dashboard.
 
 ## File Structure
-match-analyzer/
 ```
 ├── data/
 │   ├── 2025_insights.csv         # Full team performance dataset
