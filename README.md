@@ -9,7 +9,7 @@ Match Analyzer is a Python-based CLI tool for analyzing and simulating FRC (Firs
 - Validate team numbers against data
 - Call Statbotics.io API for real-time data
 - Simulate match outcomes with scoring breakdown
-- Modular design for possible future interface or dashboard integration
+- Modular design for any possible future interface or dashboard integration
 
 ## Future Plans
 It is likely this project will not be touched for the current being. The future depends on whether an AI assistant would be recommendable or a smart picklisting function could be integrated within a dashboard.
