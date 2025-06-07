@@ -9,7 +9,9 @@ def analyze_team(team_number, data):
     print(data)
     
 def compare_teams(teams):
-    pf = pd.read_csv("2025_insights.csv")
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    data_path = os.path.join(base_dir, "../data/2025_insights.csv")
+    pf = pd.read_csv(data_path)
     teams = [int(t) for t in teams]
     comparison_df = pf[pf['num'].isin(teams)]
 

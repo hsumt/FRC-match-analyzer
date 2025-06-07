@@ -1,3 +1,6 @@
 pandas
 colorama
 requests
+os
+dotenv
+random

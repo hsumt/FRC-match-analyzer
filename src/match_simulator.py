@@ -1,10 +1,13 @@
 import pandas as pd
+import os
 import colorama as cd
 import random as rd
 
 def load_data():
-    df = pd.read_csv("2025_insights.csv")
-    df["num"] = df["num"].astype(int)  # Ensure numeric match
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    data_path = os.path.join(base_dir, "../data/2025_insights.csv")
+    df = pd.read_csv(data_path)
+    df["num"] = df["num"].astype(int)
     return df
 
 
